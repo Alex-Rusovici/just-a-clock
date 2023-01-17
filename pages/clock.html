@@ -23,10 +23,35 @@
     rel="stylesheet"
     href="/styles/style.css"
   >
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.1.0/pixi.min.js"
+    integrity="sha512-gqnuP5QcpM9UvzKO/8RoHc36fK0d0qouqcRjo4vxrk7OlEgPXj6S7wLvSbq7+hs6GsHAxxTRKqbEqZxuyAgOVA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
   <title>Clock</title>
+
+  <script
+    src="/scripts/footerYear.js"
+    defer
+  ></script>
+
+  <script
+    src="../scripts/movingClock.js"
+    defer
+  ></script>
+
+  <script
+    src="../scripts/backgroundAnimation.js"
+    defer
+  ></script>
 </head>
 
 <body>
+  <canvas></canvas>
+
   <div class="container d-flex flex-column align-items-center">
     <header class="d-flex flex-column align-items-center my-5">
       <h1>Let's check the time</h1>
@@ -34,7 +59,7 @@
     </header>
 
     <main>
-      <section class="container d-flex justify-content-center">
+      <section class="d-flex justify-content-center">
         <div class="clock">
           <div class="hour">
             <div
@@ -62,7 +87,7 @@
       <section class="d-flex flex-column align-items-center justify-content-center">
         <h2 class="mt-5 mb-3">Let's try a different thing:</h2>
 
-        <ul class="button-wrapper d-flex flex-column align-items-center d-lg-flex flex-lg-row gap-4">
+        <ul class="d-flex flex-column align-items-center d-lg-flex flex-lg-row gap-4">
           <li>
             <a
               href="./stopwatch.html"
@@ -77,15 +102,16 @@
             >Set a timer</a>
           </li>
         </ul>
+
+        <h3 class="mt-2">Or, let's return the the <a href="/index.html"> <b>homepage</b></a></h2>
       </section>
     </main>
 
     <footer>
-      <p>© Alex Rusovici</p>
+      <p id="footer-date"></p>
     </footer>
   </div>
 
-  <script src="../scripts/movingClock.js"></script>
 </body>
 
 </html>

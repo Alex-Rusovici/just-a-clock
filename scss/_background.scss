@@ -1,0 +1,22 @@
+$primary: #fe5800;
+
+$gray-primary: #434242;
+$gray-secondary: #898989;
+$gray-tertiary: #d9d9d9;
+
+$black: #1e1e1e;
+$white: #f3f3f3;
+
+body {
+  background-color: $gray-primary;
+  color: $black;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}

@@ -24,11 +24,30 @@
     href="/styles/style.css"
   >
 
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.1.0/pixi.min.js"
+    integrity="sha512-gqnuP5QcpM9UvzKO/8RoHc36fK0d0qouqcRjo4vxrk7OlEgPXj6S7wLvSbq7+hs6GsHAxxTRKqbEqZxuyAgOVA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script
+    src="/scripts/footerYear.js"
+    defer
+  ></script>
+
+  <script
+    src="./scripts/backgroundAnimation.js"
+    defer
+  ></script>
   <title>Time App</title>
 </head>
 
 <body>
-  <div class="container d-flex flex-column align-items-center">
+
+  <canvas> </canvas>
+
+  <div class="dom-element container d-flex flex-column align-items-center">
     <header class="d-flex flex-column align-items-center mt-5">
       <h1>Hello!</h1>
       <h2>What would you like to do today?</h2>
@@ -60,9 +79,10 @@
     </main>
 
     <footer>
-      <p>© Alex Rusovici</p>
+      <p id="footer-date"></p>
     </footer>
   </div>
+
 </body>
 
 </html>

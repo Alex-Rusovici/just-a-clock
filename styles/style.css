@@ -320,6 +320,13 @@ body {
 }
 
 /**
+ * Remove ul padding.
+ */
+ul {
+  padding: 0;
+}
+
+/**
  * Remove list styles.
  */
 li {
@@ -402,68 +409,57 @@ body {
 
 h1 {
   font-weight: 900;
-  color: #d9d9d9;
+  color: #1e1e1e;
 }
 
 h2 {
-  color: #d9d9d9;
+  color: #1e1e1e;
   font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
 }
 
 .button-primary {
   align-items: center;
-  background-color: #434242;
-  border: 2px solid #1e1e1e;
-  border-radius: 8px;
-  color: #d9d9d9;
-  display: flex;
-  font-size: 1.5rem;
+  background-color: #d9d9d9;
+  border: 2px solid #434242;
+  border-radius: 12px;
+  box-sizing: border-box;
+  color: #434242;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1rem;
   font-weight: 900;
   height: 48px;
   justify-content: center;
-  max-width: 100%;
-  padding: 0 25px;
-  position: relative;
+  line-height: 24px;
+  padding: 0 17px;
   text-align: center;
-  text-decoration: none;
+  transition: all 0.3s;
   touch-action: manipulation;
-  transition: all 0.2s ease-in-out;
 }
 
-.button-primary:after {
-  background-color: #1e1e1e;
-  border-radius: 8px;
-  content: "";
-  display: block;
-  height: 48px;
-  left: 0;
-  width: 100%;
-  position: absolute;
-  top: -2px;
-  transform: translate(8px, 8px);
-  transition: transform 0.2s ease-out;
-  z-index: -1;
-}
-
-.button-primary:hover:after {
-  transform: translate(0, 0);
-}
-
-.button-primary:active {
-  background-color: #d9d9d9;
-  color: #434242;
-  outline: 0;
+.button-primary:focus {
+  color: #1e1e1e;
 }
 
 .button-primary:hover {
-  outline: 0;
-  background-color: #d9d9d9;
-  color: #434242;
+  background-color: #434242;
+  border-color: #d9d9d9;
+  color: #d9d9d9;
+}
+
+.button-primary:active {
+  border-color: #434242;
+  color: #d9d9d9;
+  fill: #1e1e1e;
 }
 
 @media (min-width: 768px) {
   .button-primary {
-    padding: 0 40px;
+    min-width: 170px;
   }
 }
 footer {
@@ -473,8 +469,8 @@ footer {
 
 .clock {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -482,6 +478,7 @@ footer {
   background-size: cover;
   border: 4px solid #434242;
   border-radius: 50%;
+  backdrop-filter: blur(10px);
   box-shadow: 0 -15px 20px #898989, inset 0 -15px 20px #898989, 0 15px 20px #1e1e1e, inset 0 15px 20px #1e1e1e;
 }
 
@@ -559,6 +556,20 @@ footer {
   border-radius: 1px 0 0 0;
   bottom: 0px;
   z-index: 12;
+}
+
+body {
+  background-color: #434242;
+  color: #1e1e1e;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=style.css.map */
