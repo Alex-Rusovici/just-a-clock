@@ -5,11 +5,11 @@ const minutes = document.querySelector('#min');
 const seconds = document.querySelector('#sec');
 
 setInterval(() => {
-  let day = new Date();
+  const day = new Date();
 
-  let hh = day.getHours() * 30;
-  let mm = day.getMinutes() * deg;
-  let ss = day.getSeconds() * deg;
+  const hh = day.getHours() * 30;
+  const mm = day.getMinutes() * deg;
+  const ss = day.getSeconds() * deg;
 
   hours.style.transform = `rotateZ(${hh + mm / 12}deg)`;
   minutes.style.transform = `rotateZ(${mm}deg)`;
