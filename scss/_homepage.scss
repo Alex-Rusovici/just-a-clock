@@ -25,48 +25,6 @@ h3 {
   font-size: 1rem;
 }
 
-.button-primary {
-  align-items: center;
-  background-color: $gray-tertiary;
-  border: 2px solid $gray-primary;
-  border-radius: 12px;
-  box-sizing: border-box;
-  color: $gray-primary;
-  cursor: pointer;
-  display: inline-flex;
-  font-size: 1rem;
-  font-weight: 900;
-  height: 48px;
-  justify-content: center;
-  line-height: 24px;
-  padding: 0 17px;
-  text-align: center;
-  transition: all 0.3s;
-  touch-action: manipulation;
-}
-
-.button-primary:focus {
-  color: $black;
-}
-
-.button-primary:hover {
-  background-color: $gray-primary;
-  border-color: $gray-tertiary;
-  color: $gray-tertiary;
-}
-
-.button-primary:active {
-  border-color: $gray-primary;
-  color: $gray-tertiary;
-  fill: $black;
-}
-
-@media (min-width: 768px) {
-  .button-primary {
-    min-width: 170px;
-  }
-}
-
 footer {
   position: fixed;
   bottom: 15px;
