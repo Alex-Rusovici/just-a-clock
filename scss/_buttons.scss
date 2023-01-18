@@ -7,9 +7,10 @@ $gray-tertiary: #d9d9d9;
 $black: #1e1e1e;
 $white: #f3f3f3;
 
+// button primary
 .button-primary {
   align-items: center;
-  background-color: $gray-tertiary;
+  background-color: #f3f3f370;
   border: 2px solid $gray-primary;
   border-radius: 12px;
   box-sizing: border-box;
@@ -22,6 +23,7 @@ $white: #f3f3f3;
   justify-content: center;
   line-height: 24px;
   padding: 0 17px;
+  backdrop-filter: blur(15px);
   text-align: center;
   transition: all 0.3s;
   touch-action: manipulation;
@@ -46,5 +48,49 @@ $white: #f3f3f3;
 @media (min-width: 768px) {
   .button-primary {
     min-width: 170px;
+  }
+}
+
+// button seconday
+.button-secondary {
+  align-items: center;
+  background-color: #d9d9d970;
+  border: 1px solid $gray-primary;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: $white;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 32px;
+  justify-content: center;
+  line-height: 24px;
+  padding: 0 12px;
+  text-align: center;
+  transition: all 0.3s;
+  touch-action: manipulation;
+  backdrop-filter: blur(5px);
+}
+
+.button-secondary:focus {
+  color: $black;
+}
+
+.button-secondary:hover {
+  background-color: $gray-primary;
+  border-color: $gray-tertiary;
+  color: $gray-tertiary;
+}
+
+.button-secondary:active {
+  border-color: $gray-primary;
+  color: $gray-tertiary;
+  fill: $black;
+}
+
+@media (min-width: 768px) {
+  .button-secondary {
+    min-width: 100px;
   }
 }

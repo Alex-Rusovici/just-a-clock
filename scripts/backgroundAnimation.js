@@ -7,7 +7,7 @@ Math.SineInOut = function (percent, amp) {
 
 let app, graphics, space;
 let total_vertices = 10;
-let amplitud = 150;
+let amplitud = 250;
 let width, height, halfHeight;
 
 function init() {
