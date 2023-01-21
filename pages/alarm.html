@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous"
+  >
+
+  <link
+    rel="stylesheet"
+    href="/styles/style.css"
+  >
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.1.0/pixi.min.js"
+    integrity="sha512-gqnuP5QcpM9UvzKO/8RoHc36fK0d0qouqcRjo4vxrk7OlEgPXj6S7wLvSbq7+hs6GsHAxxTRKqbEqZxuyAgOVA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <title>Stopwatch</title>
+
+  <script
+    src="/scripts/footerYear.js"
+    defer
+  ></script>
+
+  <script
+    src="../scripts/backgroundAnimation.js"
+    defer
+  ></script>
+
+  <script
+    src="../scripts/timer.js"
+    defer
+  ></script>
+</head>
+
+<body>
+  <canvas></canvas>
+
+  <div class="container d-flex flex-column align-items-center">
+    <header class="d-flex flex-column align-items-center my-5">
+      <h1>Let's set a timer!</h1>
+      <h2>Setting a timer can help you stay organized!</h2>
+    </header>
+
+    <main>
+      <section class="d-flex justify-content-center">
+        <div class="countdown d-flex flex-column justify-content-center align-items-center gap-4">
+          <form class="form d-flex flex-row gap-4">
+            <input
+              type="number"
+              min="1"
+              class="time-input"
+              placeholder="Input the amount of"
+            >
+
+            <select name="format">
+              <option value="minutes">Minutes</option>
+              <option value="seconds">Seconds</option>
+            </select>
+
+            <button
+              type="submit"
+              id="set-button"
+              class="set-button"
+            >Set</button>
+          </form>
+
+          <div class="timer">
+            <p id="countdown">00:00,00</p>
+          </div>
+
+          <div class="countdown-buttons">
+            <button
+              type="button"
+              class="button-secondary"
+              id="stop-button"
+            >Stop
+            </button>
+
+            <button
+              type="button"
+              class="button-secondary"
+              id="reset-button"
+            >Reset
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="d-flex flex-column align-items-center justify-content-center">
+        <h2 class="mt-5 mb-3">Let's try a different thing:</h2>
+
+        <ul class="d-flex flex-column align-items-center d-lg-flex flex-lg-row gap-4">
+          <li>
+            <a
+              href="./clock.html"
+              class="button-primary"
+            >Check the time</a>
+          </li>
+
+          <li>
+            <a
+              href="./stopwatch.html"
+              class="button-primary"
+            >Use a stopwatch</a>
+          </li>
+        </ul>
+
+        <h3 class="mt-2">Or, let's return the the <a href="/index.html"> <span
+              class="button-tertiary">Homepage</span></a></h3>
+      </section>
+    </main>
+
+    <footer>
+      <p id="footer-date"></p>
+    </footer>
+  </div>
+
+</body>
+
+</html>

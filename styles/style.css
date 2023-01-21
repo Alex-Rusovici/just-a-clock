@@ -333,6 +333,10 @@ li {
   list-style-type: none;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 @font-face {
   font-family: "Lato";
   src: url("/fonts/Lato-BoldItalic.woff2") format("woff2"), url("/fonts/Lato-BoldItalic.woff") format("woff");
@@ -487,6 +491,10 @@ li {
     min-width: 100px;
   }
 }
+.button-tertiary {
+  font-weight: bold;
+}
+
 body {
   background-color: #434242;
 }
@@ -621,6 +629,63 @@ footer {
 }
 
 .stopwatch-tile .stopwatch p.running {
+  color: #fe5800;
+}
+
+.countdown {
+  height: 300px;
+  border: 4px solid #434242;
+  padding: 0 16px;
+  border-radius: 64px;
+  box-shadow: 0 -15px 20px #898989, inset 0 -15px 20px #898989, 0 15px 20px #1e1e1e, inset 0 15px 20px #1e1e1e;
+  backdrop-filter: blur(15px);
+}
+
+.countdown input {
+  background-color: transparent;
+  color: #1e1e1e;
+  border: 0;
+  border-bottom: 1px solid #1e1e1e;
+  width: 160px;
+}
+
+.countdown input::placeholder {
+  color: #1e1e1e;
+  text-align: center;
+}
+
+.countdown select {
+  background-color: transparent;
+  border: 0;
+}
+
+.countdown .set-button {
+  padding: 8px;
+  background-color: transparent;
+  border: 0;
+}
+
+.countdown .set-button:hover {
+  color: #fe5800;
+  background-color: #d9d9d9;
+  border-radius: 8px;
+}
+
+.timer {
+  font-size: 64px;
+  font-weight: 900;
+  color: #f3f3f3;
+}
+
+.timer .color-white {
+  color: #f3f3f3;
+}
+
+.timer .color-black {
+  color: #1e1e1e;
+}
+
+.timer .color-primary {
   color: #fe5800;
 }
 

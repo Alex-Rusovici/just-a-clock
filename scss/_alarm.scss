@@ -1,0 +1,66 @@
+$primary: #fe5800;
+
+$gray-primary: #434242;
+$gray-secondary: #898989;
+$gray-tertiary: #d9d9d9;
+
+$black: #1e1e1e;
+$white: #f3f3f3;
+
+.countdown {
+  height: 300px;
+  border: 4px solid $gray-primary;
+  padding: 0 16px;
+  border-radius: 64px;
+  box-shadow: 0 -15px 20px $gray-secondary, inset 0 -15px 20px $gray-secondary,
+    0 15px 20px $black, inset 0 15px 20px $black;
+  backdrop-filter: blur(15px);
+}
+
+.countdown input {
+  background-color: transparent;
+  color: $black;
+  border: 0;
+  border-bottom: 1px solid $black;
+  width: 160px;
+}
+
+.countdown input::placeholder {
+  color: $black;
+  text-align: center;
+}
+
+.countdown select {
+  background-color: transparent;
+  border: 0;
+}
+
+.countdown .set-button {
+  padding: 8px;
+  background-color: transparent;
+  border: 0;
+}
+
+.countdown .set-button:hover {
+  color: $primary;
+  background-color: $gray-tertiary;
+  border-radius: 8px;
+}
+
+.timer {
+  font-size: 64px;
+  font-weight: 900;
+  color: $white;
+}
+
+.timer .color-white {
+  color: $white;
+}
+
+.timer .color-black {
+  color: $black;
+}
+
+.timer .color-primary {
+  color: $primary;
+}
