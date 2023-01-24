@@ -15,4 +15,4 @@
 
 
 
-<a href="https://magnificent-fudge-e6b4cd.netlify.app/" target="_blank" rel="noopener noreferrer">This is the live version</a>
+<a href="https://magnificent-fudge-e6b4cd.netlify.app/" target="_blank" rel="noopener noreferrer">This is the deployed version of the website</a>
