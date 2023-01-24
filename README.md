@@ -14,4 +14,4 @@
 <p>For functionality there is basic javaScript and other javaScript libraries for different purposes, like the animated background</p>
 
 
-
+<a href='https://magnificent-fudge-e6b4cd.netlify.app/'>This is a deployed version of the website</a>
