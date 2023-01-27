@@ -1,4 +1,4 @@
-<h1>This is a basic website with basic functionality</h1>
+<h1>Time app - multiple functionalities</h1>
 
 <h2>Scope</h2>
 
